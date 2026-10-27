@@ -6,7 +6,7 @@ const PORT = 3000;
 const app = express();
 const server = http.createServer(app);
 server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on https://messaging-app-js1a.onrender.com:${PORT}`);
 });
 const io = new Server(server);
 
