@@ -24,6 +24,6 @@ socket.addEventListener('message', (msg) => {
     span.style.color = getRandomHexColor();
     span.textContent = msg.username;
     li.appendChild(span);
-    li.append(`: ${msg.message}`);
+    li.innerHTML += `: ${msg.message}`;
     document.getElementById('messages').appendChild(li);
 })
